@@ -30,6 +30,13 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash:8].css',
             chunkFilename: '[name].[contenthash:8].chunk.css'
+        }),
+        // 区分环境
+        new webpack.DefinePlugin({
+            // 定义 NODE_ENV 环境变量为 production
+            'process.env': {
+                NODE_ENV: JSON.stringify('production')
+            }
         })
     ],
     module: {
