@@ -71,7 +71,7 @@ module.exports = {
         // new webpack.NamedModulesPlugin(),
         // 进行模块热替换
         new webpack.HotModuleReplacementPlugin(),
-        // 出现错误是在命令行出现更友好提示
+        // 在命令行进行友好提示
         new FriendlyErrorsWebpackPlugin()
     ],
     module: {
