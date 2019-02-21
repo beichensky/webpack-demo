@@ -36,7 +36,7 @@ $ npm run build
 
 
 
-### 项目构件速度对比
+### 项目构建速度对比
 如想查看 DllPlugin 使用之后是否对构建速度有所提升，可以将 webpack.config.js 中 DllReferencePlugin 和 AddAssetHtmlPlugin 插件的使用注释掉，执行 `npm run build`，记录项目打包构建时间；再将注释重新打开，再次执行 `npm run build`，记录项目打包构建时间，进行对比，即可发现区别。
 
 
